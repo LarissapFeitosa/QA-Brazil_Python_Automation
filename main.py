@@ -30,10 +30,15 @@ class TestUrbanRoutes:
         assert routes_page.get_to_location_value() == data.ADDRESS_TO
 
     def test_select_plan (self):
+
     def test_fill_phone_number (self):
+
     def test_fill_card (self):
+
     def test_comment_for_driver(self):
+
     def test_order_blanket_and_handkerchiefs(self):
+
     def test_car_search_model_appears(self):
 
     @classmethod
