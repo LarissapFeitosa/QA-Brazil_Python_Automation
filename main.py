@@ -16,27 +16,28 @@ class TestUrbanRoutes:
         from selenium.webdriver import DesiredCapabilities
         capabilities = DesiredCapabilities.CHROME
         capabilities["goog:loggingPrefs"] = {'performance': 'ALL'}
-        cls.driver = webdriver.Chrome()
+        from selenium import webdriver
         if helpers.is_url_reachable(data.URBAN_ROUTES_URL):
             print("Conectado ao servidor Urban Routes.")
         else:
             print("Não foi possível conectar ao Urban Routes. Verifique se o servidor está ligado e ainda em execução.")
 
     def test_set_route (self):
-      self.driver.get(data.URBAN_ROUTES_URL)
-    routes_page = UrbanRoutesPage(self.driver)
-    routes_page. enter_location(data.ADDRESS_FROM, data.ADDRESS_TO)
-    assert routes_page.get_from_location_value() == data.ADDRESS_FROM
-    assert routes_page.get_to_location_value() == data.ADDRESS_TO
+        self.driver.get(data.URBAN_ROUTES_URL)
+        routes_page: UrbanRoutesPage(self.driver)
+        routes_page.enter_location(data.ADDRESS_FROM, data.ADDRESS_TO)
+        assert routes_page.get_from_location_value() == data.ADDRESS_FROM
+        assert routes_page.get_to_location_value() == data.ADDRESS_TO
+
     def test_select_plan (self):
-        def test_fill_phone_number (self):
-            def test_fill_card (self):
-                def test_comment_for_driver(self):
-                    def test_order_blanket_and_handkerchiefs(self):
-                        def test_car_search_model_appears(self):
-                            @classmethod
-                            def teardown_class(cls):
-                                cls.driver.quit()
+    def test_fill_phone_number (self):
+    def test_fill_card (self):
+    def test_comment_for_driver(self):
+    def test_order_blanket_and_handkerchiefs(self):
+    def test_car_search_model_appears(self):
+
+    @classmethod
+    def teardown_class(cls):
 
 
-
+cls.driver.quit()
