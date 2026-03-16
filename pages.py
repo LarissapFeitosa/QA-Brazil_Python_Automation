@@ -7,27 +7,28 @@ import time
 class UrbanRoutesPage:
 
     from_field = (By.ID, 'from')
-    to_field = (By.to, 'to')
+    to_field = (By.ID, 'to')
 
     def __init__(self, driver):
         self.driver = driver
 
-    def enter_from_location (self, from_text):
+    def enter_from_location(self, from_text):
         self.driver.find_element (*self.from_field).send_keys(from_text)
 
     def enter_to_location(self, to_text):
         self.driver.find_element(*self.to_field).send_keys(to_text)
 
-    def enter_location (self, from_text, to_text):
+    def enter_location(self, from_text, to_text):
         self.enter_from_location(from_text)
         self.enter_to_location(to_text)
 
-    def test_order_2_ice_creams(self):
-        numbers_of_icre_creams = 2
-        for count in range(numbers_of_icre_creams):
+    def get_from_location_value(self):
+        return WebDriverWait(self.driver, 3).until(
+    EC.visibility_of_element_located(self.from_field)
+    ).get_attribute('value')
 
-    def get_to_location_value (self):
+    def get_to_location_value(self):
         return WebDriverWait(self.driver, 3).until(
     EC.visibility_of_element_located(self.to_field)
-    ).get_attribute('value'):
+    ).get_attribute('value')
 
