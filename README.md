@@ -1,3 +1,7 @@
+
+
+Objetivo do projeto é criar um teste automizado que contemple todo o processo de solitação de um taxi do aplicativo urban routes. Foram utilizadas as seguintes ferramentas e linguagens de programação respectivamente, Git/GitHub, Selenium Webdriver, POM, Pytest e Python. Através desse processo pude aprender a Adicionar arquivos, constantes, classes, criar funcões do zero, utilizar Devtools e o processo de automação foi realizado com sucesso. 
+
 ### Diretrizes de nomenclatura de código
 
 - **Nomes de variáveis** são escritos em `snake_case` e descrevem sua finalidade;
