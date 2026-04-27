@@ -1,12 +1,37 @@
 
 
-Objetivo do projeto é criar um teste automizado que contemple todo o processo de solitação de um taxi do aplicativo urban routes. Foram utilizadas as seguintes ferramentas e linguagens de programação respectivamente, Git/GitHub, Selenium Webdriver, POM, Pytest e Python. Através desse processo pude aprender a Adicionar arquivos, constantes, classes, criar funcões do zero, utilizar Devtools e o processo de automação foi realizado com sucesso. 
+Teste Automatizado - Solicitação de Táxi | Urban Routes
+Sobre o Projeto
 
-### Diretrizes de nomenclatura de código
+Este projeto tem como objetivo criar um teste automatizado que contempla todo o processo de solicitação de um táxi no aplicativo Urban Routes.
 
-- **Nomes de variáveis** são escritos em `snake_case` e descrevem sua finalidade;
-- **Constantes** são escritas em maiúsculas;
-- **Comentários** são usados para explicar blocos importantes de código;
-- A **organização do código** é modular, com blocos de código reutilizáveis importados para onde for necessário;
-- Evite funções de espera (`wait`) desnecessárias que fazem com que o teste seja executado por mais tempo do que o necessário;
-- Siga uma **convenção de nomenclatura** para títulos de teste que começam com `test\_` e fornece uma descrição clara do cenário de teste. Os títulos dos testes são fornecidos no resumo.
+A automação foi desenvolvida para simular o fluxo completo do utilizador dentro da aplicação, validando etapas importantes da jornada de pedido de transporte de forma eficiente e confiável.
+
+Tecnologias Utilizadas
+Git / GitHub
+Python
+Selenium WebDriver
+Pytest
+Page Object Model (POM)
+Funcionalidades Automatizadas
+Acesso à aplicação
+Preenchimento de campos necessários
+Seleção de opções de corrida
+Solicitação de táxi
+Validação do fluxo completo
+Execução automatizada de testes
+Aprendizados Durante o Projeto
+
+Durante o desenvolvimento deste projeto foi possível aprender e aplicar diversos conceitos importantes de automação de testes, tais como:
+
+Adição e organização de ficheiros no projeto
+Criação de constantes
+Criação de classes
+Desenvolvimento de funções do zero
+Estruturação com Page Object Model (POM)
+Utilização do DevTools para inspeção e localização de elementos
+Boas práticas em automação com Selenium
+
+Resultado
+
+O processo de automação foi realizado com sucesso, garantindo a validação automatizada do fluxo de solicitação de táxi no aplicativo Urban Routes.
